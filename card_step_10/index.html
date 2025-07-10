@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      padding: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      margin-bottom: 15px;
+    }
+
+    .stars span {
+      color: orange;
+      font-size: 18px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .blue { background-color: #0a6ebd; }
+    .purple { background-color: #3f3d56; }
+    .black { background-color: #000; }
+    .orange { background-color: orange; }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="https://picsum.photos/200/300?grayscale" alt="Shoes" />
+      <h3>Shoes</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$100.00</div>
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+      </div>
+      <button class="btn blue">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Earphone" />
+      <h3>Earphone</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$40.00</div>
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+      </div>
+      <button class="btn purple">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/200/300?grayscale" alt="Watch" />
+      <h3>Watch</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$70.84</div>
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+      <button class="btn black">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Mobile" />
+      <h3>Mobile</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$1000.84</div>
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <button class="btn orange">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
